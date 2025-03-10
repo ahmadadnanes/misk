@@ -3,11 +3,11 @@ button:not(.navbar-toggler){
     background-color: $primary;
     padding: 15px 25px;
     border-radius: 30px;
-    color: white;
+    color: $white;
     transition: .5s;
     &:hover{
         background-color: $primary-hover;
-        color: black;
+        color: $black;
     }
     border: 0;
 }

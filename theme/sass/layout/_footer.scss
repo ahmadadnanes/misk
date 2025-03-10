@@ -1,8 +1,7 @@
 footer {
   height: 480px;
     .group {
-      padding: 30px;
-      width: 100%;            
+      padding: 30px;      
       @include media-breakpoint-down(sm){
         font-size: 1.375rem;
       }
@@ -12,7 +11,7 @@ footer {
           padding-bottom: 15px;
         }
         a {
-          color: white;
+          color: $white;
           text-decoration: none;
           transition: 0.5s;
           position: relative;
@@ -23,7 +22,7 @@ footer {
             bottom: 0;
             height: 2px;
             width: 100%;
-            background-color: white;
+            background-color: $white;
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
           }
@@ -44,17 +43,14 @@ footer {
     .social-media{
         background: $primary-hover;
         padding: 30px 15px;
-        @include media-breakpoint-up(lg){
-            padding: 30px 150px;
-        }
 
         a{
-            font-size: 14px;
+            font-size: 0.875rem;
             text-decoration: none;
-            font-weight: 300;
+            font-weight: $font-weight-light;
         }
     }
-
+    ;
     @include media-breakpoint-up(lg){
       .group{
         padding: 50px 150px;
@@ -62,6 +58,9 @@ footer {
       }
       .footer-image{
         display: block;
+      }
+      .social-media{
+        padding: 30px 150px;
       }
     }
 }

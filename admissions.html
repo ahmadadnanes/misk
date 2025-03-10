@@ -8,8 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar d-flex align-items-center justify-content-between p-0 z-3">
-        <a class="navbar-brand ps-3" href="#">
+  <div class="page-container">
+    <div class="banner position-relative">
+      <nav class="navbar position-absolute top-0 d-flex align-items-center justify-content-between p-0 z-3 w-100">
+        <a class="navbar-brand ps-3" href="/">
             <img src="theme/images/logo-colored (1).svg" alt="">
         </a>
         <div class="burger-menu position-relative d-flex justify-content-center align-items-center">
@@ -22,10 +24,45 @@
                     id="menuButton"
             >
             
-            <img src="theme/images/Hamburger Menu.svg" />
+            <img src="theme/images/Hamburger Menu (2).png" />
             </button>
         </div>
-    </nav>
+        <div class="collapse navbar-collapse ps-3 position-absolute" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="rectangle">
+      </div>
+    </div>
+  </div>
+
+
+    </div>
      <!-- start footer -->
      <footer class="bg-primary">
         <div class="d-flex align-items-center justify-content-between">
@@ -90,5 +127,6 @@
         </div>
     </footer>
   <!-- end footer -->
+   <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

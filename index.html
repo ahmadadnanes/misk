@@ -11,7 +11,7 @@
   <!-- start nav -->
   <nav class="navbar position-absolute top-0 end-0 z-3 d-flex align-items-center p-0 z-3">
     <div class="d-flex align-items-center w-100 justify-content-between">
-      <a class="navbar-brand ps-3" href="#">
+      <a class="navbar-brand ps-3" href="/">
         <img src="theme/images/logo-colored.svg" alt="">
       </a>
       <div class="burger-menu position-relative d-flex justify-content-center align-items-center">
@@ -27,26 +27,46 @@
           <img src="theme/images/Hamburger Menu.svg" />
         </button>
       </div>
-      <div class="fullscreen-menu px-3 pt-1" id="fullscreenMenu">
-        <div class="menu-header d-flex justify-content-between">
+      <div class="collapse navbar-collapse ps-3 position-absolute px-3 pt-1 top-0 start-0 z-3 w-100 bg-primary text-white" id="navbarNav">
+        <div class="menu-header d-flex justify-content-between align-items-center w-100">
           <img src="theme/images/logo-colored.svg" alt="">
           <span class="close-menu" id="closeMenu">&times;</span>
         </div>
-        <a href="#" class="display-5">
-            About Us
-        </a>
-        <a href="#" class="display-5">
-            Admissions
-        </a>
-        <a href="#" class="display-5">
-            Learning Journey
-        </a>
-        <a href="#" class="display-5">
-            Work With Us
-        </a>
-        <div class="search-container">
-          <input type="text" placeholder="Search">
-        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="display-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="display-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admissions
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown display-5">
+            <a class="display-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Work With Us
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex position-absolute bottom-0 mb-3 border-top border-primary-hover" role="search">
+          <input class="form-control rounded-0 p-3 mt-3" type="search" placeholder="Search" aria-label="Search">
+        </form>
       </div>
     </div>
   </nav>
@@ -69,7 +89,7 @@
   </section>
   <!-- end hero -->
 
-  <section class="page-container">
+  <section class="page-container home-container">
     <!-- start glance -->
     <section class="glance container">
       <div class="bg-primary text-white rounded-4">
@@ -103,7 +123,7 @@
     <!-- start featured -->
       <section class="featured">
         <h2 class="text-center">Featured News</h2>
-        <div class="news">
+        <div class="news w-100 overflow-hidden">
           <div class="row flex-nowrap ms-0">
             <div class="col-3 mb-3 d-none d-md-block ps-0">
               <div class="position-relative">
@@ -220,14 +240,14 @@
       <!-- start footer -->
       <footer class="bg-primary">
         <div class="d-flex align-items-center align-self-stretch justify-content-between">
-          <div class="group">
+          <div class="group w-100">
             <div class="menus d-flex justify-content-between">
               <ul class="menu-group">
                 <li>
                   <a href="">About Us</a>
                 </li>
                 <li>
-                  <a href="">Admissions</a>
+                  <a href="admissions.html">Admissions</a>
                 </li>
                 <li>
                   <a href="">Learning Journey</a>
@@ -244,7 +264,7 @@
                   <a href="">About Us</a>
                 </li>
                 <li>
-                  <a href="">Admissions</a>
+                  <a href="admissions.html">Admissions</a>
                 </li>
                 <li>
                   <a href="">Learning Journey</a>
@@ -283,14 +303,7 @@
   <!-- end footer -->
   </section>
 </body>
-<script>
-document.getElementById("menuButton").addEventListener("click", function () {
-    let menu = document.getElementById("fullscreenMenu");
-    menu.classList.toggle("show");
-});
-
-document.getElementById("closeMenu").addEventListener("click", function () {
-    document.getElementById("fullscreenMenu").classList.remove("show");
-});
-</script>
+<script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/nav.js"></script>
 </html>
