@@ -12233,7 +12233,7 @@ button:not(.navbar-toggler):hover {
 }
 
 .hero {
-  background-image: url("/theme/images/pexels-fauxels-3184325 1.png");
+  background-image: url("theme/images/pexels-fauxels-3184325 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
