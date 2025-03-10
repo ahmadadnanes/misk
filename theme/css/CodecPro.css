@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Codec Pro Bold';
+  src: url('../webfonts/Codec-Pro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Codec Pro Regular';
+  src: url('../webfonts/Codec-Pro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Codec Pro Italic';
+  src: url('../webfonts/Codec-Pro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}

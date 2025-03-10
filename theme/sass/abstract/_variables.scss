@@ -1,0 +1,60 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+// start typography
+
+
+//font
+
+$font-family-sans-serif: 'Codec Pro Regular', sans-serif;
+
+
+//text colors
+
+$light: #FFFFFF;
+
+// display
+$display-font-sizes: (
+  1: 3.75rem,
+  2: 3rem,
+  3: 2.375rem,
+  4: 1.875rem,
+  5: 1.5rem,
+  6: 1.125rem
+);
+$display-font-weight: 600;
+
+
+// heading
+$h1-font-size: 4.75rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1.4375rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+$headings-font-weight: 600;
+$headings-line-height: 140%;
+
+//quote
+$blockqoute-font-size: 1.5625rem;
+$blockqoute-footer-font-size: 1rem;
+
+$font-size-base: 1.125rem;
+$font-size-sm: 1rem;
+
+//end typography
+
+//hero 
+$hero-title-font-size: 4.25rem;
+$hero-font-size-sm: 2.652rem;
+
+$hero-body-font-size: 1.25rem;
+$hero-font-weight: 600;
+
+//date
+$date-sm-font-size: 0.875rem;
+
+//links
+$link-font-size-sm: 14px;
+$link-font-weight: 600;
+
+//display
+$display-font-color: $gray-900;

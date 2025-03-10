@@ -1,0 +1,121 @@
+.hero-title{
+    @include font-size($hero-title-font-size);
+    font-weight: $hero-font-weight;
+}
+.hero-body{
+    @include font-size($hero-body-font-size)
+}
+
+.blockquote{
+    line-height: 2.34;
+    padding-left: 30px;
+    border-left: 2px solid $dark;
+    footer{
+        font-size: $blockqoute-footer-font-size
+    }
+}
+
+.page-container{
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    gap: 100px;
+    @include media-breakpoint-down(sm){
+        padding-top: 50px;
+        gap: 50px;
+    }
+}
+
+
+.hero{
+    background-image: url('/theme/images/pexels-fauxels-3184325\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    h2{
+        color: white;
+    }
+    .overlay{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 2.22%, rgba(0, 0, 0, 0.50) 73.4%);
+    }
+
+    .hero-content{
+        padding: 0 150px 80px 150px;
+        @include media-breakpoint-down(lg){
+            padding: 0 15px 50px 15px;
+        }
+        .hero-title{
+            width: 726px;
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            padding: 0 15px 50px 15px;
+        }
+    }
+}
+
+.glance{
+    h2{
+        color: white;
+    }
+    .stats{
+        padding: 50px 30px 50px 30px;
+        .stats-body{
+            margin: 30px 30px 50px 30px;
+            gap: 100px;
+            @media (max-width: 576px) {
+                gap: 20px;
+            }
+            p{
+                &:first-of-type{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.text-and-image{
+    img{
+        width: 100%;
+        @include media-breakpoint-up(lg){
+            width: 608px;
+        }
+    }
+    .text{
+        flex: 1;
+        gap: 20px;
+        padding: 30px;
+        @include media-breakpoint-up(lg){
+            padding: 50px;
+        }
+        p{
+            @include media-breakpoint-up(lg){
+                width: 632px;
+                gap: 33px;
+            }
+        }
+    }
+}
+
+
+.partners{
+    .container{
+        padding-block: 30px;
+        @include media-breakpoint-up(sm){
+            width: 1140px;
+        }
+        .logos{
+            width: 792px;
+            gap: 30px;
+            > div{
+                width: 165px;
+                height: 140px;
+                padding-left: 8px;
+                padding-right: 7px;
+            }
+        }
+    }
+}
