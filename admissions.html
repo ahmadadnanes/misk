@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="page-container">
-    <div class="banner position-relative">
+    <div class="banner position-relative d-flex flex-column align-self-stretch">
       <nav class="navbar position-absolute top-0 d-flex align-items-center justify-content-between p-0 z-3 w-100">
         <a class="navbar-brand ps-3" href="/">
             <img src="theme/images/logo-colored (1).svg" alt="">
@@ -27,41 +27,79 @@
             <img src="theme/images/Hamburger Menu (2).png" />
             </button>
         </div>
-        <div class="collapse navbar-collapse ps-3 position-absolute" id="navbarNav">
+        <div class="collapse navbar-collapse ps-3 position-absolute px-3 pt-1 top-0 start-0 z-3 w-100 bg-primary text-white" id="navbarNav">
+          <div class="menu-header d-flex justify-content-between align-items-center w-100">
+            <img src="theme/images/logo-colored.svg" alt="" class="logo">
+            <span class="close-menu" id="closeMenu">&times;</span>
+          </div>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+              <a class="display-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+                <img src="theme/images/Vector.svg" alt="" width="15px" height="18px">
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <li class="nav-item dropdown">
+              <a class="display-4 d-flex align-items-center gap-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Admissions
+                <img src="theme/images/Vector.svg" alt="" width="15px" height="18px">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown display-4">
+              <a class="display-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Work With Us
+                <img src="theme/images/Vector.svg" alt="" width="15px" height="18px">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>display-5
+              </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex position-absolute bottom-0 mb-3 border-top border-primary-hover" role="search">
+            <input class="form-control rounded-0 p-3 mt-4" type="search" placeholder="Search" aria-label="Search">
           </form>
         </div>
       </nav>
-      <div class="rectangle">
+      <div class="rectangle position-absolute top-0 start-0 w-100"></div>
+      <div class="hero-title z-1">
+          <h2>
+              Admissions  
+          </h2>
+      </div>
+      <div class="group-banner z-1">
+        <div class="info bg-primary-hover">
+          <div class="date">
+              16 March 2022
+          </div>
+          <div class="social d-flex gap-3">
+            <img src="/theme/images/facebook.svg" alt="">
+            <img src="/theme/images/instegram.svg" alt="">
+            <img src="/theme/images/linkdin.svg" alt="">
+            <img src="/theme/images/twitter.svg" alt="">
+          </div>
+        </div>
+        <div class="image-container d-flex justify-content-center align-content-center">
+          <img src="theme/images/banner.png" alt="">
+        </div>
+      </div>
+      </div>
+      <div class="form">
+          
       </div>
     </div>
   </div>
-
-
     </div>
      <!-- start footer -->
      <footer class="bg-primary">
@@ -127,6 +165,8 @@
         </div>
     </footer>
   <!-- end footer -->
+   <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="/js/nav.js"></script>
 </body>
 </html>

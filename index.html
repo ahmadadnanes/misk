@@ -12,7 +12,7 @@
   <nav class="navbar position-absolute top-0 end-0 z-3 d-flex align-items-center p-0 z-3">
     <div class="d-flex align-items-center w-100 justify-content-between">
       <a class="navbar-brand ps-3" href="/">
-        <img src="theme/images/logo-colored.svg" alt="">
+        <img src="theme/images/logo-colored.svg" alt="" class="logo">
       </a>
       <div class="burger-menu position-relative d-flex justify-content-center align-items-center">
         <svg viewBox="0 0 332 118" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
@@ -29,13 +29,14 @@
       </div>
       <div class="collapse navbar-collapse ps-3 position-absolute px-3 pt-1 top-0 start-0 z-3 w-100 bg-primary text-white" id="navbarNav">
         <div class="menu-header d-flex justify-content-between align-items-center w-100">
-          <img src="theme/images/logo-colored.svg" alt="">
+          <img src="theme/images/logo-colored.svg" alt="" class="logo">
           <span class="close-menu" id="closeMenu">&times;</span>
         </div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="display-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="display-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               About Us
+              <img src="theme/images/Vector.svg" alt="" width="15px" height="18px">
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
@@ -44,8 +45,9 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="display-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="display-4 d-flex align-items-center gap-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Admissions
+              <img src="theme/images/Vector.svg" alt="" width="15px" height="18px">
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
@@ -53,19 +55,20 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown display-5">
-            <a class="display-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown display-4">
+            <a class="display-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Work With Us
+              <img src="theme/images/Vector.svg" alt="" width="15px" height="18px">
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>display-5
             </ul>
           </li>
         </ul>
         <form class="d-flex position-absolute bottom-0 mb-3 border-top border-primary-hover" role="search">
-          <input class="form-control rounded-0 p-3 mt-3" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control rounded-0 p-3 mt-4" type="search" placeholder="Search" aria-label="Search">
         </form>
       </div>
     </div>
@@ -97,19 +100,19 @@
               <h2 class="stats-title">At a Glance</h2>
               <div class="stats-body d-flex justify-content-between align-items-center flex-column flex-md-row">
                   <div>
-                      <p class="display-1 text-primary-hover">9</p>
+                      <p class="display-1 text-primary-hover counter">9</p>
                       <p class="display-6">
                           School Buildings
                       </p>
                   </div>
                   <div>
-                      <p class="display-1 text-primary-hover">15</p>
+                      <p class="display-1 text-primary-hover counter">15</p>
                       <p class="display-6">
                           School Max Class Sizes
                       </p>
                   </div>
                   <div>
-                      <p class="display-1 text-primary-hover">100+</p>
+                      <p class="display-1 text-primary-hover counter">100+</p>
                       <p class="display-6">
                           Co-curricular Activities
                       </p>
@@ -306,4 +309,5 @@
 <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/counter.js" type="module"></script>
 </html>

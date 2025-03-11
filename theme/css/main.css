@@ -12015,6 +12015,9 @@ textarea.form-control-lg {
   font-weight: bold;
   position: relative;
 }
+.navbar-collapse a img {
+  rotate: 90deg;
+}
 .navbar-collapse a::after {
   content: "";
   position: absolute;
@@ -12022,12 +12025,15 @@ textarea.form-control-lg {
   bottom: 0;
   height: 2px;
   width: 100%;
-  background-color: #fff;
+  background-color: #C2D500;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 .navbar-collapse a:hover::after {
   opacity: 1;
+}
+.navbar-collapse a:hover img {
+  rotate: 270deg;
 }
 
 .dropdown-menu {
@@ -12065,7 +12071,7 @@ textarea.form-control-lg {
   padding: 10px;
 }
 
-.navbar img {
+.navbar .logo {
   width: 150px;
   height: 48px;
 }
@@ -12111,7 +12117,7 @@ footer .group ul a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   height: 2px;
   width: 100%;
   background-color: #fff;
@@ -12311,11 +12317,37 @@ button:not(.navbar-toggler):hover {
   height: 140px;
   padding-left: 8px;
   padding-right: 7px;
+  transition: 0.5s;
+}
+.partners .container .logos > div:hover {
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(1, 1, 1, 0.15);
 }
 
-.rectangle {
-  height: 646.163px;
+.banner {
+  padding-top: 234px;
+  gap: 50px;
+  align-self: stretch;
+}
+.banner .rectangle {
   background-color: #DBEAE6;
+  height: 646.163px;
+}
+.banner .hero-title {
+  padding-left: 150px;
+}
+.banner .group-banner {
+  height: 581px;
+}
+.banner .group-banner .image-container img {
+  border-radius: 7px;
+}
+.banner .info {
+  display: flex;
+  width: 900px;
+  padding: 10px 30px 10px 150px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -12333,6 +12365,10 @@ ul {
 
 .text-primary-hover {
   color: #C2D500;
+}
+
+.bg-primary-hover {
+  background-color: #C2D500;
 }
 
 .border-primary-hover {

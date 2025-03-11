@@ -1,4 +1,27 @@
-.rectangle{
-    height: 646.163px;
-    background-color: $tertiary-hover;
+.banner{
+    padding-top: 234px;
+    gap: 50px;
+    align-self: stretch;
+    .rectangle{
+        background-color: $tertiary-hover;
+        height: 646.163px;
+    }
+    .hero-title{
+        padding-left: 150px;
+    }
+    .group-banner{
+        height: 581px;
+        .image-container{
+            img{
+                border-radius: 7px;
+            }
+        }   
+    }
+    .info{
+        display: flex;
+        width: 900px;
+        padding: 10px 30px 10px 150px;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
