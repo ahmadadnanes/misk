@@ -1,20 +1,3 @@
-.hero-title{
-    @include font-size($hero-title-font-size);
-    font-weight: $hero-font-weight;
-}
-.hero-body{
-    @include font-size($hero-body-font-size)
-}
-
-.blockquote{
-    line-height: 2.34;
-    padding-left: 30px;
-    border-left: 2px solid $dark;
-    footer{
-        font-size: $blockqoute-footer-font-size
-    }
-}
-
 .home-container{
     padding-top: 100px;
     @include media-breakpoint-down(sm){
@@ -94,6 +77,24 @@
             p{
                 width: 632px;
                 gap: 33px;
+            }
+            > div{
+                .arrow , a{
+                    transition: opacity 0.3s ease-in-out;
+                }
+                &:hover{
+                    .arrow{
+                        &:first-of-type{
+                            opacity: 1 !important;
+                        }
+                        &:last-of-type{
+                            opacity: 0;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }

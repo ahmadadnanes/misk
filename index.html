@@ -27,7 +27,7 @@
           <img src="theme/images/Hamburger Menu.svg" />
         </button>
       </div>
-      <div class="collapse navbar-collapse ps-3 position-absolute px-3 pt-1 top-0 start-0 z-3 w-100 bg-primary text-white" id="navbarNav">
+      <div class="collapse navbar-collapse ps-3 position-absolute px-3 top-0 start-0 z-3 w-100 bg-primary text-white" id="navbarNav">
         <div class="menu-header d-flex justify-content-between align-items-center w-100">
           <img src="theme/images/logo-colored.svg" alt="" class="logo">
           <span class="close-menu" id="closeMenu">&times;</span>
@@ -63,7 +63,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>display-5
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
         </ul>
@@ -128,37 +128,40 @@
         <h2 class="text-center">Featured News</h2>
         <div class="news w-100 overflow-hidden">
           <div class="row flex-nowrap ms-0">
-            <div class="col-3 mb-3 d-none d-md-block ps-0">
+            <div class="col-3 mb-3 d-none d-md-block ps-0 news-item ms-1">
               <div class="position-relative">
-                <img src="theme/images/image 16.png" alt="" class="w-100 rounded-1">
+                <img src="theme/images/image 16.png" alt="" class="w-100 rounded-1 news-image">
                 <span class="text-white rounded-4 bg-primary date position-absolute z-1">May 15, 2023</span>
               </div>
               <p class="fw-semibold">Misk Schools and AEON Partner for Climate Education</p>
               <div class="link d-flex gap-1 align-items-center">
+                <img src="theme/images/Vector black.svg" alt="" class="arrow">
                 <a href="">Read More</a>
                 <img src="theme/images/Vector black.svg" alt="" class="arrow">
               </div>
             </div>
             
-            <div class="col-12 col-md-6 mb-3">
+            <div class="col-6 mb-3 news-item">
               <div class="position-relative">
-                <img src="theme/images/image 15.png" alt="" class="w-100 rounded-1">
+                <img src="theme/images/image 15.png" alt="" class="w-100 rounded-1 news-image">
                 <span class="text-white rounded-4 bg-primary date position-absolute z-1">May 15, 2023</span>
               </div>
               <p class="fw-semibold">Safe Guarding Forums Puts Safety First in Saudi Schools</p>
               <div class="link d-flex gap-1 align-items-center">
+                <img src="theme/images/Vector black.svg" alt="" class="arrow">
                 <a href="">Read More</a>
                 <img src="theme/images/Vector black.svg" alt="" class="arrow">
               </div>
             </div>
             
-            <div class="col-3 mb-3 d-none d-md-block">
+            <div class="col-3 mb-3 d-none d-md-block news-item">
               <div class="position-relative">
-                <img src="theme/images/image 14.png" alt="" class="w-100 rounded-1">
+                <img src="theme/images/image 14.png" alt="" class="w-100 rounded-1 news-image">
                 <span class="text-white rounded-4 bg-primary date position-absolute z-1">May 15, 2023</span>
               </div>
               <p class="fw-semibold">SPACE 2101: Inspiring Scientists of Tomorrow</p>
               <div class="link d-flex gap-1 align-items-center">
+                <img src="theme/images/Vector black.svg" alt="" class="arrow">
                 <a href="">Read More</a>
                 <img src="theme/images/Vector black.svg" alt="" class="arrow">
               </div>
@@ -167,11 +170,11 @@
         </div>
       
         <div class="d-flex align-items-center justify-content-center flex-column">
-          <div class="arrows">
-            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-icon">
+          <div class="arrows d-flex">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-icon prev">
               <path d="M17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0ZM25.1562 16.4062C25.7603 16.4062 26.25 16.8959 26.25 17.5C26.25 18.1041 25.7603 18.5938 25.1562 18.5938H12.4843L17.1796 23.2891C17.6068 23.7162 17.6068 24.4088 17.1796 24.8359C16.7525 25.263 16.06 25.263 15.6329 24.8359L9.07035 18.2734C8.64322 17.8463 8.64322 17.1537 9.07035 16.7266L15.6329 10.1641C16.06 9.73697 16.7525 9.73697 17.1796 10.1641C17.6068 10.5912 17.6068 11.2838 17.1796 11.7109L12.4843 16.4062H25.1562Z" fill="#00372A"/>
             </svg>
-            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-icon">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-icon next">
               <path d="M17.5 0C27.165 0 35 7.83502 35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0ZM9.84375 16.4062C9.23969 16.4062 8.75 16.8959 8.75 17.5C8.75 18.1041 9.23969 18.5938 9.84375 18.5938H22.5157L17.8204 23.2891C17.3932 23.7162 17.3932 24.4088 17.8204 24.8359C18.2475 25.263 18.94 25.263 19.3671 24.8359L25.9296 18.2734C26.3568 17.8463 26.3568 17.1537 25.9296 16.7266L19.3671 10.1641C18.94 9.73697 18.2475 9.73697 17.8204 10.1641C17.3932 10.5912 17.3932 11.2838 17.8204 11.7109L22.5157 16.4062H9.84375Z" fill="#00372A"/>
             </svg>
           </div>
@@ -193,7 +196,10 @@
               Teaching young people what it means to be a leader is a community responsibility, not simply a subject on a timetable. <br><br>
               Leadership is a set of behaviours and a way of thinking and young people can learn when they are surrounded by positive role models, an d actively mentored to recognize, interpret, and emulate what they observe. These are the skills and attributes we foster.
             </p>
-            <div>
+            <div class="d-flex align-items-center gap-1">
+                <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow opacity-0">
+                  <path d="M9.36011 6.5L0.000108194 12.5L0.000108719 0.5L9.36011 6.5Z" fill="white"/>
+                </svg>
                 <a href="" class="text-white">Learn More</a>
                 <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                   <path d="M9.36011 6.5L0.000108194 12.5L0.000108719 0.5L9.36011 6.5Z" fill="white"/>
@@ -308,6 +314,7 @@
 </body>
 <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/nav.js"></script>
-<script src="js/counter.js" type="module"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/counter.js" type="module"></script>
+<script src="/js/carousel.js"></script>
 </html>

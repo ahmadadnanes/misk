@@ -43,12 +43,13 @@ footer {
     .social-media{
         background: $primary-hover;
         padding: 30px 15px;
-
+      .links{
         a{
-            font-size: 0.875rem;
-            text-decoration: none;
-            font-weight: $font-weight-light;
+          font-size: $link-font-size-sm;
+          text-decoration: none;
+          font-weight: $font-weight-light;
         }
+      }
     }
     ;
     @include media-breakpoint-up(lg){

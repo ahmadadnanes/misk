@@ -27,69 +27,24 @@ ul{
 }
 
 @include media-breakpoint-down(sm){
-    .display-1{
-        font-size: 3.125rem
-    }
-    .display-2{
-        font-size: 2.375rem
-    }
-    .display-3{
-        font-size: 1.75rem
-    }
-    .display-4{
-        font-size: 1.5rem
-    }
-    .display-5{
-        font-size: 1.25rem
-    }
-    .dispaly-6{
-        font-size: 1rem
-    }
-
-    h1 , .h1{
-        font-size: 2.25rem
-    }
-    h2 , .h2{
-        font-size: 1.75rem;
-    }
-    h3 , .h3{
-        font-size: 1.375rem
-    }
-    h4 , .h4{
-        font-size: 1.25rem
-    }
-    h5 , .h5{
-        font-size: 1.125rem
-    }
-    h6 , .h6{
-        font-size: 0.875rem
-    }
-    
-    .hero-body{
-        font-size: 1.125rem
-    }
-
-    .blockquote{
-        font-size: 1rem;
-        line-height: 1.4;
-        footer{
-            @include font-size(0.75rem)
-        }
-    }
-
-    .date{
-        font-size: date-sm-font-size
-    }
-
-    .lead{
-        font-size: 1rem;
-    }
-
-    p{
-       font-size: 0.875rem;
-    }
-
     .page-container{
         gap: 50px;
+    }
+}
+
+.hero-title{
+    @include font-size($hero-title-font-size);
+    font-weight: $hero-font-weight;
+}
+.hero-body{
+    @include font-size($hero-body-font-size)
+}
+
+.blockquote{
+    line-height: 2.34;
+    padding-left: 30px;
+    border-left: 2px solid $dark;
+    footer{
+        @include font-size($blockqoute-footer-font-size);
     }
 }
