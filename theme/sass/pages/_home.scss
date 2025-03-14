@@ -60,7 +60,7 @@
 }
 
 .text-and-image{
-    img{
+    .image{
         width: 100%;
     }
     .text{
@@ -69,7 +69,7 @@
         padding: 30px;
     }
     @include media-breakpoint-up(lg){
-        img{
+        .image{
             width: 608px;
         }
         .text{

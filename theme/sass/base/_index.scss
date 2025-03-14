@@ -4,9 +4,6 @@ a{
         font-size:  $link-font-size-sm;
     }
 }
-ul{
-    padding: 0;
-}
 
 .text-primary-hover{
     color: $primary-hover;
@@ -46,5 +43,70 @@ ul{
     border-left: 2px solid $dark;
     footer{
         @include font-size($blockqoute-footer-font-size);
+    }
+}
+
+
+p{
+    @include font-size($font-size-sm);
+}
+
+.banner{
+    padding-top: 234px;
+    gap: 50px;
+    .rectangle{
+        background-color: $tertiary-hover;
+        height: 646.163px;
+    }
+    .hero-title{
+        padding-left: 150px;
+    }
+    .group-banner{
+        height: 581px;
+        .image-container{
+            img{
+                border-radius: 7px;
+            }
+        }   
+    }
+    .image-container{
+        padding-left: 150px;
+    }
+    .info{
+        display: flex;
+        width: 900px;
+        padding: 10px 30px 10px 150px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@include media-breakpoint-down(lg){
+    .banner{
+        padding-top: 100px;
+        .rectangle{
+            height: 400px;
+        }
+        .info{
+            width: 100%;
+            flex-direction: column;
+            gap: 20px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+        }
+        .group-banner{
+            height: 100%;
+            .image-container{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .image-container{
+            padding-inline: 15px;
+        }
+        .hero-title{
+            padding-left: 15px;
+        }
     }
 }

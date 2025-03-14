@@ -4,7 +4,7 @@
 
 //font
 
-$font-family-sans-serif: 'Codec Pro Regular', sans-serif;
+$font-family-sans-serif: 'Codec Pro', sans-serif;
 
 
 //text colors
@@ -32,6 +32,7 @@ $h5-font-size: 1.25rem;
 $h6-font-size: 1rem;
 $headings-font-weight: 600;
 $headings-line-height: 140%;
+$headings-color:  $gray-900;
 
 //quote
 $blockqoute-font-size: 1.5625rem;
@@ -61,3 +62,10 @@ $display-font-color: $gray-900;
 
 //dropdown
 $dropdown-link-hover-bg: transparent;
+
+//form
+$form-label-font-weight: 600;
+$input-padding-x: 10px;
+$input-padding-y: 12px;
+$input-border-radius: 2px;
+$input-border-width: 1px;

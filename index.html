@@ -76,20 +76,20 @@
   <!-- end nav  -->
 
   <!-- start hero -->
-  <section class="hero position-relative">
-    <div class="overlay position-absolute top-0 start-0 w-100 h-100" >
-    </div>
-    <div class="hero-content text-white position-absolute bottom-0">
+  <section class="hero position-relative cd-hero js-cd-hero js-cd-autoplay" id="hero">
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+    <div class="hero-content text-white position-absolute bottom-0 z-3">
         <h2 class="hero-title">
             Setting Trends for a Nation on the Move
         </h2>
-        <div class="pagers">
-            <img src="theme/images/Vector.svg" alt="" srcset="">
-            <img src="theme/images/Vector(1).svg" alt="">
-            <img src="theme/images/Vector(1).svg" alt="" srcset="">
+        <div class="pagers position-relative z-3 d-flex gap-2">
+            <img src="theme/images/Vector.svg" alt="Bullet 1" class="bullet active" data-index="0">
+            <img src="theme/images/Vector(1).svg" alt="Bullet 2" class="bullet" data-index="1">
+            <img src="theme/images/Vector(1).svg" alt="Bullet 3" class="bullet" data-index="2">
         </div>
     </div>
-  </section>
+</section>
+
   <!-- end hero -->
 
   <section class="page-container home-container">
@@ -186,12 +186,13 @@
       <!-- end featured -->
 
       <!-- start text and image -->
-      <section class="text-and-image d-flex text-white flex-column flex-lg-row">
-        <img src="theme/images/image 4.png" alt="">
-        <div class="text bg-primary d-flex flex-column">
-            <h2>
+      <section class="text-and-image d-flex text-white flex-column flex-lg-row overflow-hidden">
+        <img src="theme/images/image 4.png" alt="" class="imgage">
+        <div class="text bg-primary d-flex flex-column position-relative">
+            <h2 class="text-white">
               Leaders in the Making
             </h2>
+
             <p>
               Teaching young people what it means to be a leader is a community responsibility, not simply a subject on a timetable. <br><br>
               Leadership is a set of behaviours and a way of thinking and young people can learn when they are surrounded by positive role models, an d actively mentored to recognize, interpret, and emulate what they observe. These are the skills and attributes we foster.
@@ -204,6 +205,12 @@
                 <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
                   <path d="M9.36011 6.5L0.000108194 12.5L0.000108719 0.5L9.36011 6.5Z" fill="white"/>
                 </svg>
+            </div>
+            <div class="arrows-group position-absolute end-0 top-0 d-flex flex-column">
+              <img src="/theme/images/Group.svg" alt="">
+              <img src="/theme/images/Group.svg" alt="">
+              <img src="/theme/images/Group.svg" alt="">
+              <img src="/theme/images/Group.svg" alt="">
             </div>
         </div>
       </section>
@@ -291,7 +298,7 @@
               <img src="theme/images/White.svg" alt="">
             </div>
           </div>
-          <img src="theme/images/pexels-fauxels-3184325 1(1).png" alt="" class="footer-image">
+          <img src="theme/images/footer.png" alt="" class="footer-image">
         </div>
         <div class="social-media">
           <div class="social-group d-flex justify-content-between align-items-center flex-column flex-lg-row gap-3 gap-lg-0">

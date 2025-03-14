@@ -1,27 +1,58 @@
-.banner{
-    padding-top: 234px;
-    gap: 50px;
-    align-self: stretch;
-    .rectangle{
-        background-color: $tertiary-hover;
-        height: 646.163px;
+.form{
+    padding-inline: 150px;
+    form{
+        width: 750px;
+        .input-box{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
     }
-    .hero-title{
-        padding-left: 150px;
+}
+
+.fees{
+    padding-left: 150px;
+    width: 945px;
+    p{
+        width: 643px;
     }
-    .group-banner{
-        height: 581px;
-        .image-container{
-            img{
-                border-radius: 7px;
+    table{
+        width: 643px;
+    }
+}
+
+.fees-details{
+    ul{
+        flex: 1 0 0;
+    }
+}
+
+@include media-breakpoint-down(lg){
+    .form{
+        flex-direction: column;
+        padding-inline: 15px;
+        form{
+            width: 100%;
+            .input-box{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
             }
-        }   
+        }
     }
-    .info{
-        display: flex;
-        width: 900px;
-        padding: 10px 30px 10px 150px;
-        justify-content: space-between;
-        align-items: center;
+
+    .fees{
+        padding-left: 15px;
+        width: 100%;
+        p{
+            width: 100%;
+        }
+        .table-responsive{
+            max-width: 100%;
+            overflow-x: auto;
+            table{
+                width: 95%;
+            }
+        }
     }
 }
