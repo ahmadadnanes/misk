@@ -12199,6 +12199,12 @@ footer .social-media .links a {
 .featured .news .link .arrow:first-of-type {
   opacity: 0;
 }
+.featured .news .news-item .image-container {
+  transition: transform 0.5s ease-in-out;
+}
+.featured .news .news-item .image-container:hover {
+  transform: scale(1.1);
+}
 .featured .news .news-item:hover .arrow:first-of-type {
   opacity: 1 !important;
 }

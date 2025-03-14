@@ -23,6 +23,12 @@
             }
         }
         .news-item{
+            .image-container{
+                transition: transform 0.5s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
             &:hover{
                     .arrow{
                         &:first-of-type{
