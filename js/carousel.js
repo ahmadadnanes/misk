@@ -5,7 +5,6 @@ const totalItems = items.length;
 function isMobile() {
   return window.innerWidth < 768;
 }
-
 function updateItems() {
   const mobile = isMobile();
   

@@ -76,16 +76,22 @@
   <!-- end nav  -->
 
   <!-- start hero -->
-  <section class="hero position-relative cd-hero js-cd-hero js-cd-autoplay" id="hero">
+  <section class="hero position-relative" id="hero">
     <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
     <div class="hero-content text-white position-absolute bottom-0">
         <h2 class="hero-title">
             Setting Trends for a Nation on the Move
         </h2>
         <div class="pagers position-relative d-flex gap-2">
-            <img src="theme/images/Vector.svg" alt="Bullet 1" class="bullet active" data-index="0">
-            <img src="theme/images/Vector(1).svg" alt="Bullet 2" class="bullet" data-index="1">
-            <img src="theme/images/Vector(1).svg" alt="Bullet 3" class="bullet" data-index="2">
+          <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="bullet">
+            <path d="M0.557528 0.928826L13.1598 9.00721L0.557528 17.0856L0.557528 0.928826Z" stroke="white"/>
+          </svg>
+          <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="bullet">
+            <path d="M0.557528 0.928826L13.1598 9.00721L0.557528 17.0856L0.557528 0.928826Z" stroke="white"/>
+          </svg>
+          <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="bullet">
+            <path d="M0.557528 0.928826L13.1598 9.00721L0.557528 17.0856L0.557528 0.928826Z" stroke="white"/>
+          </svg>
         </div>
     </div>
 </section>
@@ -187,7 +193,7 @@
 
       <!-- start text and image -->
       <section class="text-and-image d-flex text-white flex-column flex-lg-row overflow-hidden">
-        <img src="theme/images/image 4.png" alt="" class="imgage">
+        <img src="theme/images/image-4.png" alt="" class="image">
         <div class="text bg-primary d-flex flex-column position-relative">
             <h2 class="text-white">
               Leaders in the Making
@@ -293,9 +299,15 @@
                 </li>
               </ul>
             </div>
-            <div class="logo d-flex gap-3">
-              <img src="theme/images/CIS Logo-02 1.svg" alt="">
-              <img src="theme/images/White.svg" alt="">
+            <div class="logo d-flex gap-3 align-items-center">
+              <picture> 
+                <source media="(min-width: 576px)" srcset="theme/images/CIS-Logo-02.svg">
+                <img src="theme/images/cis-small.png" alt="" width="223.884px">
+              </picture>
+              <picture>
+                <source media="(min-width: 576px)" srcset="theme/images/White.svg">
+                <img src="theme/images/ib-small.png" alt="" width="70px">
+              </picture>
             </div>
           </div>
           <img src="theme/images/footer.png" alt="" class="footer-image">
@@ -303,10 +315,18 @@
         <div class="social-media">
           <div class="social-group d-flex justify-content-between align-items-center flex-column flex-lg-row gap-3 gap-lg-0">
             <div class="social d-flex gap-3">
-              <img src="theme/images/facebook.svg" alt="">
-              <img src="theme/images/instegram.svg" alt="">
-              <img src="theme/images/linkdin.svg" alt="">
-              <img src="theme/images/twitter.svg" alt="">
+              <a href="">
+                <img src="theme/images/facebook.svg" alt="">
+              </a>
+              <a href="">
+                <img src="theme/images/instegram.svg" alt="">
+              </a>
+              <a href="">
+                <img src="theme/images/linkdin.svg" alt="">
+              </a>
+              <a href="">
+                <img src="theme/images/twitter.svg" alt="">
+              </a>
             </div>
             <div class="links d-flex flex-wrap justify-content-center gap-3">
               <a href="">Privacy Policy</a>
@@ -324,4 +344,5 @@
 <script src="/js/nav.js"></script>
 <script src="/js/counter.js" type="module"></script>
 <script src="/js/carousel.js"></script>
+<script src="/js/hero-slider.js"></script>
 </html>

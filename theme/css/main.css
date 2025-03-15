@@ -12115,6 +12115,7 @@ footer {
   height: 480px;
 }
 footer .group {
+  flex: 1;
   padding: 30px;
 }
 @media (max-width: 575.98px) {
@@ -12167,13 +12168,17 @@ footer .social-media .links a {
 @media (min-width: 992px) {
   footer .group {
     padding: 50px 150px;
+  }
+  footer .social-media {
+    padding: 30px 150px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .group {
     width: 844px;
   }
   footer .footer-image {
     display: block;
-  }
-  footer .social-media {
-    padding: 30px 150px;
   }
 }
 
@@ -12302,6 +12307,18 @@ button:not(.navbar-toggler):hover {
 .hero .hero-content .hero-title {
   width: 762px;
 }
+.hero .hero-content .bullet {
+  fill: none;
+}
+.hero .hero-content .bullet:hover {
+  cursor: pointer;
+}
+.hero .hero-content .bullet:hover path {
+  fill: #C2D500;
+}
+.hero .hero-content .bullet.active path {
+  fill: #C2D500;
+}
 @media (max-width: 991.98px) {
   .hero .hero-content {
     padding: 0 15px 50px 15px;
@@ -12330,6 +12347,9 @@ button:not(.navbar-toggler):hover {
   }
 }
 
+.text-and-image {
+  max-width: 100% !important;
+}
 .text-and-image .image {
   width: 100%;
 }
@@ -12360,6 +12380,11 @@ button:not(.navbar-toggler):hover {
   }
   .text-and-image .text > div:hover a {
     text-decoration: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .text-and-image .image {
+    width: 450px;
   }
 }
 

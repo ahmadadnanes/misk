@@ -1,6 +1,7 @@
 footer {
   height: 480px;
     .group {
+      flex: 1;
       padding: 30px;      
       @include media-breakpoint-down(sm){
         font-size: 1.375rem;
@@ -56,13 +57,17 @@ footer {
     @include media-breakpoint-up(lg){
       .group{
         padding: 50px 150px;
-        width: 844px; 
-      }
-      .footer-image{
-        display: block;
       }
       .social-media{
         padding: 30px 150px;
       }
+    }
+    @include media-breakpoint-up(xl){
+        .group{
+          width: 844px; 
+        }
+        .footer-image{
+          display: block;
+        }
     }
 }
