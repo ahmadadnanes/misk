@@ -54,7 +54,7 @@
         @include media-breakpoint-up(lg){
             .news-item{
                 &.active{
-                    height: 788.16px;
+                    height: 65%;
                     .news-image{
                         height: 661.19px;
                     }
