@@ -8,13 +8,7 @@
 
 .hero{
     height: 600px;
-    img{
-        height: 600px;
-    }
     .carousel-indicators{
-        left: auto !important;
-        right: auto !important;
-        gap: 10px;
         button {
             all: unset !important;
             svg {
@@ -58,9 +52,6 @@
 }
 
 .glance{
-    h2{
-        color: $white;
-    }
     .stats{
         padding: 50px 30px 50px 30px;
         .stats-body{
@@ -82,7 +73,6 @@
 }
 
 .text-and-image{
-    max-width: 100% !important;
     .image{
         width: 100%;
     }
@@ -145,7 +135,7 @@
                     border-radius: 10px;
                     box-shadow: 0px 5px 15px rgba(1 1 1 /15%);
                 }
-            }
+            }  
         }
     }
 }

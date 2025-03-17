@@ -12,10 +12,10 @@
   <nav class="navbar position-absolute top-0 end-0 z-3 d-flex align-items-center p-0 z-3">
     <div class="d-flex align-items-center w-100 justify-content-between">
       <a class="navbar-brand ps-3" href="/">
-        <img src="theme/images/logo-colored.svg" alt="" class="logo">
+        <img src="theme/images/logo-colored.svg" alt="" class="logo" width="150px" height="48px">
       </a>
       <div class="burger-menu position-relative d-flex justify-content-center align-items-center">
-        <svg viewBox="0 0 332 118" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+        <svg viewBox="0 0 332 118" fill="none" xmlns="http://www.w3.org/2000/svg" class="" width="164px" height="58px">
           <path d="M0 0C23.833 68.6866 89.1535 118 166 118C242.846 118 308.167 68.6866 332 0H0Z" fill="#C2D500"/>
         </svg>
         <button class="navbar-toggler position-absolute border-0" type="button" data-bs-toggle="collapse" 
@@ -24,50 +24,57 @@
                 id="menuButton"
         >
         
-          <img src="theme/images/Hamburger Menu.svg" />
+          <img src="theme/images/Hamburger Menu.svg" width="36.444px" height="36.444px"/>
         </button>
       </div>
-      <div class="collapse navbar-collapse ps-3 position-absolute px-3 top-0 start-0 z-3 w-100 bg-primary text-white" id="navbarNav">
+      <div class="collapse navbar-collapse ps-3 position-absolute px-3 top-0 start-0 z-3 w-100 bg-primary text-white flex-column" id="navbarNav">
         <div class="menu-header d-flex justify-content-between align-items-center w-100">
-          <img src="theme/images/logo-colored.svg" alt="" class="logo">
+          <img src="theme/images/logo-colored.svg" alt="" class="logo" width="150px" height="48px">
           <span class="close-menu" id="closeMenu">&times;</span>
         </div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="display-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="display-4 text-decoration-none text-white fw-bold d-block position-relative d-flex align-items-center gap-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               About Us
               <img src="theme/images/Vector.svg" alt="" width="15px" height="18px">
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <a class="dropdown-item text-decoration-none text-white fw-bold d-block position-relative" href="#"">Action</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="" class="dropdown-item"></a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item text-decoration-none text-white fw-bold d-block position-relative" href="#">Another action</a></li>
+              <li><a class="dropdown-item text-decoration-none text-white fw-bold d-block position-relative" href="#">Something else here</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="display-4 d-flex align-items-center gap-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="display-4 d-flex align-items-center gap-3 text-decoration-none text-white fw-bold d-block position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Admissions
               <img src="theme/images/Vector.svg" alt="" width="15px" height="18px">
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item text-decoration-none text-white fw-bold d-block position-relative" href="#">Action</a></li>
+              <li><a class="dropdown-item text-decoration-none text-white fw-bold d-block position-relative" href="#">Another action</a></li>
+              <li><a class="dropdown-item text-decoration-none text-white fw-bold d-block position-relative" href="#">Something else here</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown display-4">
-            <a class="display-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="d-flex align-items-center gap-3 display-4 text-decoration-none text-white fw-bold d-block position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Work With Us
               <img src="theme/images/Vector.svg" alt="" width="15px" height="18px">
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item text-decoration-none text-white fw-bold d-block position-relative" href="#">Action</a></li>
+              <li><a class="dropdown-item text-decoration-none text-white fw-bold d-block position-relative" href="#">Another action</a></li>
+              <li><a class="dropdown-item text-decoration-none text-white fw-bold d-block position-relative" href="#">Something else here</a></li>
             </ul>
           </li>
         </ul>
-        <form class="d-flex position-absolute bottom-0 mb-3 border-top border-primary-hover" role="search">
+        <form class="d-flex position-absolute bottom-0 mb-3 border-top border-primary-hover p-2" role="search">
           <input class="form-control rounded-0 p-3 mt-4" type="search" placeholder="Search" aria-label="Search">
         </form>
       </div>
@@ -77,12 +84,11 @@
 
   <!-- start hero -->
   <div id="hero" class="carousel slide hero position-relative" data-bs-ride="carousel">
-    <!-- Hero Content Wrapper -->
     <div class="hero-content position-absolute bottom-0 z-1">
       <h2 class="hero-title text-white">
         Setting Trends for a Nation on the Move
       </h2>
-      <div class="carousel-indicators position-static justify-content-start ms-2">
+      <div class="carousel-indicators position-static justify-content-start ms-2 start-100 end-100 gap-2">
         <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active">
           <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.52872 0.928826L13.131 9.00721L0.528719 17.0856L0.52872 0.928826Z" stroke="white"/>
@@ -101,15 +107,15 @@
       </div>
     </div>
   
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/theme/images/hero.png" class="d-block w-100 object-fit-cover " alt="...">
+    <div class="carousel-inner h-100">
+      <div class="carousel-item active h-100">
+        <img src="/theme/images/hero.png" class="d-block w-100 object-fit-cover  h-100" alt="...">
       </div>
-      <div class="carousel-item">
-        <img src="/theme/images/hero-2.jpeg" class="d-block w-100 object-fit-cover" alt="...">
+      <div class="carousel-item h-100">
+        <img src="/theme/images/hero-2.jpeg" class="d-block w-100 object-fit-cover h-100" alt="...">
       </div>
-      <div class="carousel-item">
-        <img src="/theme/images/hero-3.png" class="d-block w-100 object-fit-cover" alt="...">
+      <div class="carousel-item h-100">
+        <img src="/theme/images/hero-3.png" class="d-block w-100 object-fit-cover h-100" alt="...">
       </div>
     </div>
   </div>
@@ -121,7 +127,7 @@
     <section class="glance container">
       <div class="bg-primary text-white rounded-4">
           <div class="stats text-center">
-              <h2 class="stats-title">At a Glance</h2>
+              <h2 class="stats-title text-white">At a Glance</h2>
               <div class="stats-body d-flex justify-content-between align-items-center flex-column flex-md-row">
                   <div>
                       <p class="display-1 text-primary-hover counter">9</p>
@@ -148,53 +154,53 @@
     <!-- end glance -->
 
     <!-- start featured -->
-      <section class="featured">
-        <h2 class="text-center">Featured News</h2>
+      <section class="featured w-100">
+        <h2 class="text-center mb-4">Featured News</h2>
         <div class="news w-100 overflow-hidden">
-          <div class="row flex-nowrap ms-0">
+          <div class="row flex-nowrap ms-0 overflow-hidden gap-4">
             <div class="col-3 mb-3 d-none d-md-block ps-0 news-item ms-1">
-              <div class="position-relative image-container">
+              <div class="position-relative image-container overflow-hidden">
                 <img src="theme/images/image 16.png" alt="" class="w-100 rounded-1 news-image">
-                <span class="text-white rounded-4 bg-primary date position-absolute z-1">May 15, 2023</span>
+                <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
               </div>
-              <p class="fw-semibold">Misk Schools and AEON Partner for Climate Education</p>
+              <p class="fw-semibold my-4">Misk Schools and AEON Partner for Climate Education</p>
               <div class="link d-flex gap-1 align-items-center">
-                <img src="theme/images/Vector black.svg" alt="" class="arrow">
+                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0">
                 <a href="">Read More</a>
                 <img src="theme/images/Vector black.svg" alt="" class="arrow">
               </div>
             </div>
             
             <div class="col-6 mb-3 news-item">
-              <div class="position-relative image-container">
+              <div class="position-relative image-container overflow-hidden">
                 <img src="theme/images/image 15.png" alt="" class="w-100 rounded-1 news-image">
-                <span class="text-white rounded-4 bg-primary date position-absolute z-1">May 15, 2023</span>
+                <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
               </div>
-              <p class="fw-semibold">Safe Guarding Forums Puts Safety First in Saudi Schools</p>
-              <div class="link d-flex gap-1 align-items-center">
-                <img src="theme/images/Vector black.svg" alt="" class="arrow">
+              <p class="fw-semibold my-4">Safe Guarding Forums Puts Safety First in Saudi Schools</p>
+              <div class="link d-flex gap-1 align-items-center overflow-hidden">
+                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
                 <a href="">Read More</a>
-                <img src="theme/images/Vector black.svg" alt="" class="arrow">
+                <img src="theme/images/Vector black.svg" alt="" class="arrow" width="9.36px" height="12px">
               </div>
             </div>
             
             <div class="col-3 mb-3 d-none d-md-block news-item">
-              <div class="position-relative image-container">
+              <div class="position-relative image-container overflow-hidden">
                 <img src="theme/images/image 14.png" alt="" class="w-100 rounded-1 news-image">
-                <span class="text-white rounded-4 bg-primary date position-absolute z-1">May 15, 2023</span>
+                <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
               </div>
-              <p class="fw-semibold">SPACE 2101: Inspiring Scientists of Tomorrow</p>
-              <div class="link d-flex gap-1 align-items-center">
-                <img src="theme/images/Vector black.svg" alt="" class="arrow">
+              <p class="fw-semibold my-4">SPACE 2101: Inspiring Scientists of Tomorrow</p>
+              <div class="link d-flex gap-1 align-items-center mt-4">
+                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
                 <a href="">Read More</a>
-                <img src="theme/images/Vector black.svg" alt="" class="arrow">
+                <img src="theme/images/Vector black.svg" alt="" class="arrow" width="9.36px" height="12px">
               </div>
             </div>
           </div>
         </div>
       
-        <div class="d-flex align-items-center justify-content-center flex-column">
-          <div class="arrows d-flex">
+        <div class="d-flex align-items-center justify-content-center flex-column mt-4">
+          <div class="arrows d-flex gap-4">
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-icon prev">
               <path d="M17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0ZM25.1562 16.4062C25.7603 16.4062 26.25 16.8959 26.25 17.5C26.25 18.1041 25.7603 18.5938 25.1562 18.5938H12.4843L17.1796 23.2891C17.6068 23.7162 17.6068 24.4088 17.1796 24.8359C16.7525 25.263 16.06 25.263 15.6329 24.8359L9.07035 18.2734C8.64322 17.8463 8.64322 17.1537 9.07035 16.7266L15.6329 10.1641C16.06 9.73697 16.7525 9.73697 17.1796 10.1641C17.6068 10.5912 17.6068 11.2838 17.1796 11.7109L12.4843 16.4062H25.1562Z" fill="#00372A"/>
             </svg>
@@ -210,7 +216,7 @@
       <!-- end featured -->
 
       <!-- start text and image -->
-      <section class="text-and-image d-flex text-white flex-column flex-lg-row overflow-hidden">
+      <section class="text-and-image d-flex text-white flex-column flex-lg-row overflow-hidden ">
         <img src="theme/images/image-4.png" alt="" class="image">
         <div class="text bg-primary d-flex flex-column position-relative">
             <h2 class="text-white">
@@ -280,40 +286,40 @@
       <!-- start footer -->
       <footer class="bg-primary">
         <div class="d-flex align-items-center align-self-stretch justify-content-between">
-          <div class="group w-100">
+          <div class="group w-100 flex-grow-1">
             <div class="menus d-flex justify-content-between">
-              <ul class="menu-group">
+              <ul class="menu-group list-unstyled p-0">
                 <li>
-                  <a href="">About Us</a>
+                  <a href="" class="text-decoration-none w-100 text-white position-relative">About Us</a>
                 </li>
                 <li>
-                  <a href="admissions.html">Admissions</a>
+                  <a href="admissions.html" class="text-decoration-none w-100 text-white position-relative">Admissions</a>
                 </li>
                 <li>
-                  <a href="">Learning Journey</a>
+                  <a href="" class="text-decoration-none w-100 text-white position-relative">Learning Journey</a>
                 </li>
                 <li>
-                  <a href="">Work With Us</a>
+                  <a href="" class="text-decoration-none w-100 text-white position-relative">Work With Us</a>
                 </li>
                 <li>
-                  <a href="">News & Media</a>
+                  <a href="" class="text-decoration-none w-100 text-white position-relative">News & Media</a>
                 </li>
               </ul>
-              <ul class="menu-group">
+              <ul class="menu-group list-unstyled p-0">
                 <li>
-                  <a href="">About Us</a>
+                  <a href="" class="text-decoration-none w-100 text-white position-relative">About Us</a>
                 </li>
                 <li>
-                  <a href="admissions.html">Admissions</a>
+                  <a href="admissions.html" class="text-decoration-none w-100 text-white position-relative">Admissions</a>
                 </li>
                 <li>
-                  <a href="">Learning Journey</a>
+                  <a href="" class="text-decoration-none w-100 text-white position-relative">Learning Journey</a>
                 </li>
                 <li>
-                  <a href="">Work With Us</a>
+                  <a href="" class="text-decoration-none w-100 text-white position-relative">Work With Us</a>
                 </li>
                 <li>
-                  <a href="">News & Media</a>
+                  <a href="" class="text-decoration-none w-100 text-white position-relative">News & Media</a>
                 </li>
               </ul>
             </div>
@@ -328,28 +334,28 @@
               </picture>
             </div>
           </div>
-          <img src="theme/images/footer.png" alt="" class="footer-image">
+          <img src="theme/images/footer.png" alt="" class="footer-image d-none flex-shrink-0">
         </div>
         <div class="social-media">
           <div class="social-group d-flex justify-content-between align-items-center flex-column flex-lg-row gap-3 gap-lg-0">
             <div class="social d-flex gap-3">
-              <a href="">
+              <a href="" class="text-decoration-none">
                 <img src="theme/images/facebook.svg" alt="">
               </a>
-              <a href="">
+              <a href="" class="text-decoration-none">
                 <img src="theme/images/instegram.svg" alt="">
               </a>
-              <a href="">
+              <a href="" class="text-decoration-none">
                 <img src="theme/images/linkdin.svg" alt="">
               </a>
-              <a href="">
+              <a href="" class="text-decoration-none">
                 <img src="theme/images/twitter.svg" alt="">
               </a>
             </div>
             <div class="links d-flex flex-wrap justify-content-center gap-3">
-              <a href="">Privacy Policy</a>
-              <a href="">Terms & Conditions</a>
-              <a href="">@Copyright MISK 2023-2024. All Rights Reserved</a>
+              <a href="" class="text-decoration-none">Privacy Policy</a>
+              <a href="" class="text-decoration-none">Terms & Conditions</a>
+              <a href="" class="text-decoration-none">@Copyright MISK 2023-2024. All Rights Reserved</a>
             </div>
           </div>
         </div>
