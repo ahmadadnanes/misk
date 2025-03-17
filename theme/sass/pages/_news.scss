@@ -16,7 +16,7 @@
             width: 945px;
         }
     }
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(xl){
         .hero-title{
             width: 100%;
         }

@@ -27,7 +27,7 @@
     }
 }
 
-@include media-breakpoint-down(lg){
+@include media-breakpoint-down(xl){
     .form{
         flex-direction: column;
         padding-inline: 15px;
