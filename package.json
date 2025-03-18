@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "counterup2": "^2.0.2"
+    "counterup2": "^2.0.2",
+    "slick-carousel": "^1.8.1"
   }
 }

@@ -2182,7 +2182,7 @@ progress {
   border-width: 0;
   border-inline-end-width: 1px;
   border-radius: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: 0.5s;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control::file-selector-button {
@@ -2954,17 +2954,17 @@ textarea.form-control-lg {
 }
 
 .btn {
-  --bs-btn-padding-x: 0.75rem;
-  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-padding-x: 25px;
+  --bs-btn-padding-y: 15px;
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1.125rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-color: #fff;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: var(--bs-border-width);
   --bs-btn-border-color: transparent;
-  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-border-radius: 30px;
   --bs-btn-hover-border-color: transparent;
   --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   --bs-btn-disabled-opacity: 0.65;
@@ -2986,7 +2986,7 @@ textarea.form-control-lg {
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: 0.5s;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -3737,7 +3737,7 @@ textarea.form-control-lg {
 }
 
 .btn-group {
-  border-radius: var(--bs-border-radius);
+  border-radius: 30px;
 }
 .btn-group > :not(.btn-check:first-child) + .btn,
 .btn-group > .btn-group:not(:first-child) {
@@ -3757,8 +3757,8 @@ textarea.form-control-lg {
 }
 
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem;
+  padding-right: 18.75px;
+  padding-left: 18.75px;
 }
 .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropend .dropdown-toggle-split::after {
   margin-left: 0;
@@ -3954,7 +3954,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-font-size: 1.40625rem;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
-  --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+  --bs-navbar-toggler-border-radius: 30px;
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
   position: relative;
@@ -4553,7 +4553,7 @@ textarea.form-control-lg {
 .accordion {
   --bs-accordion-color: var(--bs-body-color);
   --bs-accordion-bg: var(--bs-body-bg);
-  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-transition: 0.5s, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: var(--bs-border-width);
   --bs-accordion-border-radius: var(--bs-border-radius);
@@ -6091,14 +6091,14 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: auto;
   padding: 0;
   color: #fff;
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
+  opacity: 1;
+  transition: 0.5s;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
@@ -6112,7 +6112,7 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .carousel-control-prev {
@@ -6150,9 +6150,9 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-right: 15%;
+  margin-right: auto;
   margin-bottom: 1rem;
-  margin-left: 15%;
+  margin-left: auto;
 }
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
@@ -12173,52 +12173,26 @@ footer .social-media .links a {
     font-size: 1.6875rem;
   }
 }
-@media (min-width: 992px) {
-  .featured .news .news-item {
-    height: 461px;
-  }
-  .featured .news .news-item .news-image {
-    height: 311px;
-  }
-  .featured .news .news-item.active {
-    height: 700px;
-  }
-  .featured .news .news-item.active .news-image {
-    height: 550px;
-  }
-}
-@media (max-width: 575.98px) {
-  .featured .news > div {
-    height: 490px;
-    gap: 15px;
-  }
-  .featured .news .news-item.active {
-    height: 474px;
-  }
-  .featured .news .news-item.active .news-image {
-    height: 235px;
-  }
-}
-.featured .arrows .my-icon path {
+.featured .arrow path {
   transition: fill 0.3s ease-in-out;
 }
-.featured .arrows .my-icon:hover {
+.featured .arrow:hover {
   cursor: pointer;
 }
-.featured .arrows .my-icon:hover path {
+.featured .arrow:hover path {
   fill: #C2D500 !important;
 }
 
-button:not(.navbar-toggler) {
+.slick-slide {
+  padding: 0 15px;
+}
+
+button:not(.navbar-toggler, .carousel-control-next, .carousel-control-prev) {
   margin-top: 31px;
   background-color: #00372A;
-  padding: 15px 25px;
-  border-radius: 30px;
-  color: #fff;
-  transition: 0.5s;
   border: 0;
 }
-button:not(.navbar-toggler):hover {
+button:not(.navbar-toggler, .carousel-control-next, .carousel-control-prev):hover {
   background-color: #C2D500;
   color: #000;
 }
@@ -12369,7 +12343,7 @@ button:not(.navbar-toggler):hover {
   flex: 1 0 0;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .form {
     flex-direction: column;
     padding-inline: 15px;
@@ -12412,7 +12386,7 @@ button:not(.navbar-toggler):hover {
 .news .content article {
   width: 945px;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .news .hero-title {
     width: 100%;
   }

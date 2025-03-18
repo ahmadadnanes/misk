@@ -1,10 +1,6 @@
-button:not(.navbar-toggler){
+button:not(.navbar-toggler ,.carousel-control-next ,.carousel-control-prev){
     margin-top: 31px;
     background-color: $primary;
-    padding: 15px 25px;
-    border-radius: 30px;
-    color: $white;
-    transition: .5s;
     &:hover{
         background-color: $primary-hover;
         color: $black;

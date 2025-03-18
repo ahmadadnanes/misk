@@ -35,37 +35,8 @@
                 @include font-size(1.6875rem);
             }
         }
-        @include media-breakpoint-up(lg){
-            .news-item{
-                height: 461px;
-                .news-image{
-                    height: 311px;
-                }
-                &.active{
-                    height: 700px;
-                    .news-image{
-                        height: 550px;
-                    }
-                }
-            }
-        }
-        @include media-breakpoint-down(sm){
-            > div{
-                height: 490px;
-                gap:  15px;
-            }
-            .news-item{
-                &.active{
-                    height: 474px;
-                    .news-image{
-                        height: 235px;  
-                    }
-                }
-            }
-        }
     }
-    .arrows{
-        .my-icon{
+        .arrow{
             path{
                 transition: fill 0.3s ease-in-out; 
             }
@@ -76,5 +47,8 @@
                 }
             };
         }
-    }
+}
+
+.slick-slide{
+    padding: 0 15px;
 }

@@ -10,6 +10,7 @@ $font-family-sans-serif: 'Codec Pro', sans-serif;
 //text colors
 
 $light: #FFFFFF;
+$white: #fff;
 
 // display
 $display-font-sizes: (
@@ -71,3 +72,15 @@ $input-border-radius: 2px;
 $input-border-width: 1px;
 
 //carousel
+$carousel-control-opacity: 1;
+$carousel-control-hover-opacity: 1;
+$carousel-control-transition: 0.5s;
+$carousel-control-width: auto;
+
+//button
+$btn-transition: .5s;
+$btn-padding-x: 25px;
+$btn-padding-y: 15px;
+$btn-color: $white;
+$btn-border-radius: 30px;
+
