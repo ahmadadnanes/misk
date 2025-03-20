@@ -1,4 +1,3 @@
-<?php $header_class = "w-100" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="theme/css/CodecPro.css">
     <link rel="stylesheet" href="/theme/css/main.css">
-    <title>Document</title>
+    <title><?php echo $title ?></title>
 </head>
 <body>
   <section class="page-container">
@@ -105,13 +104,13 @@
           </ul>
       </div>
         <p>
-          * Personal use while a Misk Schools’ student
+          * Personal use while a Misk Schools’ studentz
         </p>
     </section>
     <?php include(__DIR__ . "/components/_footer.html") ?>
   </section>
-   <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-   <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="/npm/@popperjs/core/dist/umd/popper.min.js"></script>
+   <script src="/npm/bootstrap/dist/js/bootstrap.min.js"></script>
    <script src="/js/nav.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+{
+    "name": "vardot/misk",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ahmadadnanes",
+            "email": "aa264048@gmail.com"
+        }
+    ],
+    "require": {}
+}

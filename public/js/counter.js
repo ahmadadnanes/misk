@@ -1,4 +1,4 @@
-import counterUp from '../node_modules/counterup2/index.js';
+import counterUp from '/npm/counterup2/index.js';
 
 const callback = entries => {
 	entries.forEach(entry => {
