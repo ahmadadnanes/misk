@@ -81,7 +81,7 @@
       </div>
     </section>
     <!-- end glance -->
-    <?php include (__DIR__ .  "/components/_featured.html") ?>
+    <?php include (__DIR__ .  "/components/_featured.php") ?>
       <!-- start text and image -->
       <section class="text-and-image d-flex text-white flex-column flex-lg-row overflow-hidden ">
         <img src="theme/images/image-4.png" alt="" class="image">

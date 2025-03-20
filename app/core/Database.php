@@ -8,10 +8,10 @@ class Database {
     private $pdo;
 
     private function __construct() {
-        $host = "localhost";
-        $db = "misk";
-        $user = "admin";
-        $pass = "password";
+        $host = $_ENV["DATABASE_HOST"];
+        $db = $_ENV["DATABASE_NAME"];
+        $user = $_ENV["DATABASE_USER"];
+        $pass = $_ENV["DATABASE_PASSWORD"];
 
         try {
             $this->pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
