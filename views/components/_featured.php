@@ -2,79 +2,81 @@
  <section class="featured news-carousel position-relative pb-5">
     <h2 class="text-center mb-4">Featured News</h2>
     <div class="news-slider news">
-        <div class="news-item">
-            <div class="position-relative image-container overflow-hidden">
-                <img src="theme/images/image 16.png" class="w-100 rounded-1 news-image">
-                <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
+        <?php foreach($news_item as $news): ?>
+            <div class="news-item">
+                <div class="position-relative image-container overflow-hidden">
+                    <img src="theme/images/image 16.png" class="w-100 rounded-1 news-image">
+                    <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
+                </div>
+                <p class="fw-semibold my-4">Misk Schools and AEON Partner for Climate Education</p>
+                <div class="link d-flex align-items-center gap-2">
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
+                    <a href="">Read More</a>
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
+                </div>
             </div>
-            <p class="fw-semibold my-4">Misk Schools and AEON Partner for Climate Education</p>
-            <div class="link d-flex align-items-center gap-2">
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
-                <a href="">Read More</a>
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
+            <div class="news-item">
+                <div class="position-relative image-container overflow-hidden">
+                    <img src="theme/images/image 15.png" class="w-100 rounded-1 news-image">
+                    <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
+                </div>
+                <p class="fw-semibold my-4">Safe Guarding Forums Puts Safety First in Saudi Schools</p>
+                <div class="link d-flex align-items-center gap-2">
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
+                    <a href="">Read More</a>
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="position-relative image-container overflow-hidden">
+                    <img src="theme/images/image 14.png" class="w-100 rounded-1 news-image">
+                    <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
+                </div>
+                <p class="fw-semibold my-4">SPACE 2101: Inspiring Scientists of Tomorrow</p>
+                <div class="link d-flex align-items-center gap-2">
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
+                    <a href="">Read More</a>
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="position-relative image-container overflow-hidden">
+                    <img src="theme/images/image 16.png" class="w-100 rounded-1 news-image">
+                    <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
+                </div>
+                <p class="fw-semibold my-4">Misk Schools and AEON Partner for Climate Education</p>
+                <div class="link d-flex align-items-center gap-2">
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
+                    <a href="">Read More</a>
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="position-relative image-container overflow-hidden">
+                    <img src="theme/images/image 15.png" class="w-100 rounded-1 news-image">
+                    <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
+                </div>
+                <p class="fw-semibold my-4">Safe Guarding Forums Puts Safety First in Saudi Schools</p>
+                <div class="link d-flex align-items-center gap-2">
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
+                    <a href="">Read More</a>
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="position-relative image-container overflow-hidden">
+                    <img src="theme/images/image 14.png" class="w-100 rounded-1 news-image">
+                    <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2024</span>
+                </div>
+                <p class="fw-semibold my-4">SPACE 2102: Inspiring Scientists of Tomorrow</p>
+                <div class="link d-flex align-items-center gap-2">
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
+                    <a href="">Read More</a>
+                    <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
+                </div>
             </div>
         </div>
-        <div class="news-item">
-            <div class="position-relative image-container overflow-hidden">
-                <img src="theme/images/image 15.png" class="w-100 rounded-1 news-image">
-                <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
-            </div>
-            <p class="fw-semibold my-4">Safe Guarding Forums Puts Safety First in Saudi Schools</p>
-            <div class="link d-flex align-items-center gap-2">
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
-                <a href="">Read More</a>
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
-            </div>
-        </div>
-        <div class="news-item">
-            <div class="position-relative image-container overflow-hidden">
-                <img src="theme/images/image 14.png" class="w-100 rounded-1 news-image">
-                <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
-            </div>
-            <p class="fw-semibold my-4">SPACE 2101: Inspiring Scientists of Tomorrow</p>
-            <div class="link d-flex align-items-center gap-2">
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
-                <a href="">Read More</a>
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
-            </div>
-        </div>
-        <div class="news-item">
-            <div class="position-relative image-container overflow-hidden">
-                <img src="theme/images/image 16.png" class="w-100 rounded-1 news-image">
-                <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
-            </div>
-            <p class="fw-semibold my-4">Misk Schools and AEON Partner for Climate Education</p>
-            <div class="link d-flex align-items-center gap-2">
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
-                <a href="">Read More</a>
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
-            </div>
-        </div>
-        <div class="news-item">
-            <div class="position-relative image-container overflow-hidden">
-                <img src="theme/images/image 15.png" class="w-100 rounded-1 news-image">
-                <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2023</span>
-            </div>
-            <p class="fw-semibold my-4">Safe Guarding Forums Puts Safety First in Saudi Schools</p>
-            <div class="link d-flex align-items-center gap-2">
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
-                <a href="">Read More</a>
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
-            </div>
-        </div>
-        <div class="news-item">
-            <div class="position-relative image-container overflow-hidden">
-                <img src="theme/images/image 14.png" class="w-100 rounded-1 news-image">
-                <span class="text-white rounded-4 bg-primary date position-absolute z-1 px-2 py-1">May 15, 2024</span>
-            </div>
-            <p class="fw-semibold my-4">SPACE 2102: Inspiring Scientists of Tomorrow</p>
-            <div class="link d-flex align-items-center gap-2">
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-0" width="9.36px" height="12px">
-                <a href="">Read More</a>
-                <img src="theme/images/Vector black.svg" alt="" class="arrow opacity-1" width="9.36px" height="12px">
-            </div>
-        </div>
-    </div>
+    <?php endforeach; ?>
     <div class="d-flex align-items-center justify-content-center flex-column mt-4">
         <div class="news-controls mt-4 pt-3 d-flex justify-content-center gap-3">
             <button class="news-prev arrow bg-transparent">

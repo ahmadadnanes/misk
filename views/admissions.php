@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="theme/css/CodecPro.css">
-    <link rel="stylesheet" href="/theme/css/main.css">
-    <title><?php echo $title ?></title>
-</head>
+<?php include (__DIR__ ."/components/_header.php"); ?>
 <body>
   <section class="page-container">
     <div class="banner position-relative d-flex flex-column align-self-stretch">
@@ -109,8 +103,5 @@
     </section>
     <?php include(__DIR__ . "/components/_footer.html") ?>
   </section>
-   <script src="/npm/@popperjs/core/dist/umd/popper.min.js"></script>
-   <script src="/npm/bootstrap/dist/js/bootstrap.min.js"></script>
-   <script src="/js/nav.js"></script>
 </body>
 </html>

@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/theme/css/CodecPro.css">
-  <link rel="stylesheet" href="/npm/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="/npm/slick-carousel/slick/slick-theme.css">
-  <link rel="stylesheet" href="/theme/css/main.css">
-  <title><?php echo $title ?></title>
-</head>
+<?php include(__DIR__ . "/components/_head.php"); ?>
 <body class="overflow-x-hidden"> 
   <?php include (__DIR__ ."/components/_header.php"); ?>
   <!-- start hero -->
@@ -152,9 +144,6 @@
       <?php include(__DIR__ . "/components/_footer.html"); ?>
   </section>
 </body>
-<script src="/npm/@popperjs/core/dist/umd/popper.min.js"></script>
-<script src="/npm/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/js/nav.js"></script>
 <script src="/js/counter.js" type="module"></script>
 <script src="/js/hero-slider.js"></script>
 <script src="/npm/jquery/dist/jquery.min.js"></script>
