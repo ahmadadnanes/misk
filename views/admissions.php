@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include (__DIR__ ."/components/_header.php"); ?>
+<?php include (__DIR__ ."/components/_head.php"); ?>
 <body>
   <section class="page-container">
     <div class="banner position-relative d-flex flex-column align-self-stretch">
