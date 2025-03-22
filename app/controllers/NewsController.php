@@ -8,8 +8,8 @@ class NewsController extends Controller{
         $this->view("news" , [
             "title" => "News Page",
             "header_class" => "w-100",
-            "selected_news" => News::all(),
-            "news" => News::get($id)
+            "selected_news" => News::get($id),
+            "news" => News::all()
         ]);
     }
 }
